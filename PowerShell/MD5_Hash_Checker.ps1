@@ -1,7 +1,6 @@
 #Get user input values for file to hash then check against MD5 checksum from vendor website
 $fileToHash = Read-Host -Prompt 'Full file path'
 $hashFromVendor = Read-Host -Prompt 'MD5 Checksum from Vendor'
-if ($hashFromVendor )
 
 #Hash the file input by the user and format details into a list
 $hashFromFile = Get-FileHash -Path $fileToHash -Algorithm MD5
