@@ -5,9 +5,9 @@ $hashFromVendor = Read-Host -Prompt 'MD5 Checksum from Vendor'
 #Hash the file input by the user and format details into a list
 $hashFromFile = Get-FileHash -Path $fileToHash -Algorithm MD5
 
-#Debugging
 Write-Host 'Hash from File:' -NoNewline
 $hashFromFile | Format-List
+
 Write-Host 'MD5 Checksum: ' -NoNewline
 $hashFromVendor.ToUpper()
 
